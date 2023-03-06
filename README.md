@@ -20,7 +20,7 @@ For this task, I have made two deployments each containers on GCP, and a horizon
 Both the containers used for this exercise are Alpine containers since I used it only for testing the Autoscaling.
 
 # Namespaces
-I have used two namespaces: staging and production.
+I have used two namespaces: **staging** and **production**.
 
 
 # Deployments
