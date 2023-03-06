@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: second-deployment
+  namespace: staging
+  labels:
+    app: alpine-deployment
+spec:
+  replicas: 2 
+  selector:
+    matchLabels:
+      app: alpine-deployment
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+     maxSurge: 1
+     maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: alpine-deployment
+    spec:
+      containers:
+      - name: alpine-container
+        image: alpine
+        command: [ "/bin/sh" , "-c", "tail -f /dev/null" ]       
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "3000Mi"
+            cpu: "2000m"
+          limits:
+            memory: "6000Mi"
+            cpu: "5000m"
