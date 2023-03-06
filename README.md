@@ -58,8 +58,8 @@ Since I have used Google Cloud Platform, I would use the IAM Cloud Deploy Develo
 
 
 # Additional Notes
+Actually, in this exercise, it was my first time using GCP since my company uses only on-premise servers. It was a really fun experience exploring it.
 
 # To-Do:
-Write about rolling and rollback
 Use bold where needed.
 
