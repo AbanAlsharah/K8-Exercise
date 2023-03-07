@@ -8,7 +8,9 @@ Kubernetes take home exercise for Thinkon.
     Container 2: This container runs code that runs a small API that returns shifts from a database.
 
 2.) For the best user experience auto scale this service when the average CPU reaches 70%.
+
 3.) Ensure the deployment can handle rolling deployments and rollbacks.
+
 4.) Your development team should not be able to run certain commands on your k8s cluster, but you want them to be able to deploy and roll back. What types of IAM controls do you put in place?
 
 
